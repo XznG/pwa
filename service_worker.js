@@ -1,9 +1,11 @@
 // service worker js in root directory only can handle any js below or same directory with it
-const cacheName = "cache_v1";
+const cacheName = "cache_v2";
 const cacheAssets = [
   'index.html',
   'css/styles.css',
-  'js/index.js'
+  'js/index.js',
+  'lib/bootstrap.min.css',
+  'manifest.webmanifest',
 ];
 // call install event
 self.addEventListener('install', e => {
@@ -63,3 +65,12 @@ self.addEventListener('fetch', e => {
       })
   );
 })
+function openPushNotification(event) {
+  count++;
+  console.log(count);
+  // event.notification.close();
+  // event.waitUntil(clients.openWindow(event.notification.data));
+}
+
+self.addEventListener("notificationclick", openPushNotification);
+var count = 0;
