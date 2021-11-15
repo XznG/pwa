@@ -1,0 +1,9 @@
+{
+  "short_name": "Test",
+  "name": "Test App",
+  "start_url": "/personal_test_pwa.github.io/v2/",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/personal_test_pwa.github.io/v2/",
+  "theme_color": "#3367D6"
+}
