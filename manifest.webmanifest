@@ -3,12 +3,12 @@
   "name": "Test App",
   "icons": [
     {
-      "src": "/img/pwa_icon.png",
+      "src": "/pwa/img/pwa_icon.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/img/pwa_icon.png",
+      "src": "/pwa/img/pwa_icon.png",
       "type": "image/png",
       "sizes": "512x512"
     }
