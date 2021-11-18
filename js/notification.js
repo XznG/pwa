@@ -19,7 +19,6 @@ if (result !== "granted") {
    };
 
   navigator.serviceWorker.ready.then(function(serviceWorker) {
-    console.log('asdasdasd');
     document.getElementById('notification_btn').onclick = function(){
       serviceWorker.showNotification(title, options);
     };
